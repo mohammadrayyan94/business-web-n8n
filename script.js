@@ -1,9 +1,52 @@
 // Small script: set year and run a lightweight particle background on the canvas
+// Plus toggle expandable app containers
+
+// Toggle app container details
+function toggleDetails(btn) {
+    const container = btn.closest('.app-container');
+    const details = container.querySelector('.app-details');
+    const isOpen = details.classList.contains('show');
+
+    // Close all other details
+    document.querySelectorAll('.app-details').forEach(d => d.classList.remove('show'));
+    document.querySelectorAll('.btn-expand').forEach(b => b.classList.remove('open'));
+
+    // Toggle current
+    if (!isOpen) {
+        details.classList.add('show');
+        btn.classList.add('open');
+        btn.textContent = 'Hide Details';
+        // Smooth scroll to details
+        details.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    } else {
+        details.classList.remove('show');
+        btn.classList.remove('open');
+        btn.textContent = 'View Details';
+    }
+}
+
+// Set navigation active state
+function setNavActive() {
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        const href = link.getAttribute('href').split('/').pop() || 'index.html';
+        if (href === currentPage) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+}
+
+// Canvas background - moving soft particles
 (function () {
     // year
     const y = new Date().getFullYear();
     const el = document.getElementById('year');
     if (el) el.textContent = y;
+
+    // Set nav active on load
+    setNavActive();
 
     // canvas background - moving soft particles
     const canvas = document.getElementById('bg-canvas');

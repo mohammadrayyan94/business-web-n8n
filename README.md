@@ -1,4 +1,4 @@
-Neurostack — Single-page marketing site
+MOHAMMAD RAYYAN — Single-page marketing site
 
 Files:
 - index.html — single-page site (hero, services, contact)

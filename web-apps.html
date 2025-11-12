@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Apps — MOHAMMAD RAYYAN</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <div class="page">
+        <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+        <nav class="site-nav-main">
+            <div class="nav-brand">
+                <h1><a href="index.html">MOHAMMAD RAYYAN</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mobile-apps.html">Mobile Apps</a></li>
+                <li><a href="web-apps.html" class="active">Web Apps</a></li>
+                <li><a href="saas.html">SaaS</a></li>
+                <li><a href="ai-agents.html">AI Agents</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="container" role="main">
+            <section class="card" id="web-apps-section" aria-labelledby="web-title">
+                <h2 id="web-title">🕸️ Our Web Applications</h2>
+                <p class="intro-text">Discover our modern web solutions designed for scalability, performance, and user
+                    engagement.</p>
+
+                <div class="apps-grid">
+                    <!-- Business Web for n8n -->
+                    <div class="app-container">
+                        <div class="app-card">
+                            <div class="app-icon">🌐</div>
+                            <h3>Neurostack Portfolio</h3>
+                            <p class="app-tech">HTML • CSS • JavaScript</p>
+                            <p class="app-desc">Professional business website showcasing digital solutions and services
+                                with modern design.</p>
+                            <button class="btn-expand" onclick="toggleDetails(this)">View Details</button>
+                        </div>
+                        <div class="app-details">
+                            <h4>About Neurostack Portfolio</h4>
+                            <p><strong>What it does:</strong> A sleek, responsive business website designed to showcase
+                                Rayyan Group's digital solutions. Features a modern dark-themed design, smooth
+                                animations, and detailed portfolio sections for mobile and web applications. Serves as a
+                                professional landing page and portfolio platform.</p>
+                            <p><strong>Key Features:</strong></p>
+                            <ul>
+                                <li>Responsive design for all devices</li>
+                                <li>Dark blue/black aesthetic with animated containers</li>
+                                <li>Canvas-based particle background animations</li>
+                                <li>Multi-page architecture (Home, Mobile Apps, Web Apps)</li>
+                                <li>Expandable app detail containers</li>
+                                <li>Smooth navigation and scroll transitions</li>
+                                <li>Contact information and GitHub links</li>
+                                <li>Lightweight and fast-loading</li>
+                            </ul>
+                            <p><strong>Tech Stack:</strong> HTML5, CSS3, Vanilla JavaScript, Canvas API</p>
+                            <p><strong>Perfect for:</strong> Freelancers, agencies, and companies showcasing their
+                                portfolio</p>
+                            <a href="https://github.com/mohammadrayyan94/business-web-n8n" target="_blank"
+                                class="btn-link">View on GitHub</a>
+                        </div>
+                    </div>
+
+                    <!-- Coming Soon: SaaS Platform -->
+                    <div class="app-container">
+                        <div class="app-card">
+                            <div class="app-icon">☁️</div>
+                            <h3>SaaS Platform</h3>
+                            <p class="app-tech">React • Node.js • MongoDB</p>
+                            <p class="app-desc">Scalable cloud-based software solution with subscription management and
+                                user analytics.</p>
+                            <button class="btn-expand" onclick="toggleDetails(this)">View Details</button>
+                        </div>
+                        <div class="app-details">
+                            <h4>About SaaS Platform</h4>
+                            <p><strong>What it does:</strong> A comprehensive Software-as-a-Service platform built for
+                                modern businesses. Features subscription management, multi-tenant architecture, advanced
+                                analytics dashboards, and integration capabilities with popular third-party services.
+                            </p>
+                            <p><strong>Key Features:</strong></p>
+                            <ul>
+                                <li>User authentication and authorization</li>
+                                <li>Subscription and billing management</li>
+                                <li>Advanced analytics and reporting</li>
+                                <li>Multi-tenant architecture</li>
+                                <li>API integration capabilities</li>
+                                <li>Role-based access control (RBAC)</li>
+                                <li>Real-time data sync</li>
+                                <li>Scalable infrastructure</li>
+                            </ul>
+                            <p><strong>Tech Stack:</strong> React, Node.js, MongoDB, Stripe, AWS</p>
+                            <p><strong>Status:</strong> Available for custom development</p>
+                            <a href="index.html#contact" class="btn-link">Request a Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- Coming Soon: Dashboard Analytics -->
+                    <div class="app-container">
+                        <div class="app-card">
+                            <div class="app-icon">📊</div>
+                            <h3>Advanced Analytics Dashboard</h3>
+                            <p class="app-tech">Vue.js • D3.js • WebSocket</p>
+                            <p class="app-desc">Real-time analytics dashboard with interactive visualizations and
+                                business intelligence insights.</p>
+                            <button class="btn-expand" onclick="toggleDetails(this)">View Details</button>
+                        </div>
+                        <div class="app-details">
+                            <h4>About Analytics Dashboard</h4>
+                            <p><strong>What it does:</strong> A sophisticated business intelligence platform providing
+                                real-time analytics, custom report generation, and interactive data visualizations.
+                                Helps businesses make data-driven decisions with comprehensive insights into key metrics
+                                and KPIs.</p>
+                            <p><strong>Key Features:</strong></p>
+                            <ul>
+                                <li>Real-time data visualization</li>
+                                <li>Interactive charts and graphs (D3.js)</li>
+                                <li>Custom dashboard creation</li>
+                                <li>Report generation and scheduling</li>
+                                <li>Data filtering and drill-down capabilities</li>
+                                <li>Export to multiple formats (PDF, Excel, CSV)</li>
+                                <li>Role-based access to reports</li>
+                                <li>WebSocket for live data streaming</li>
+                            </ul>
+                            <p><strong>Tech Stack:</strong> Vue.js, D3.js, Node.js, WebSocket, PostgreSQL</p>
+                            <p><strong>Status:</strong> Available for businesses</p>
+                            <a href="index.html#contact" class="btn-link">Get in Touch</a>
+                        </div>
+                    </div>
+
+                    <!-- Coming Soon: Content Management System -->
+                    <div class="app-container">
+                        <div class="app-card">
+                            <div class="app-icon">📝</div>
+                            <h3>Modern CMS</h3>
+                            <p class="app-tech">Next.js • Headless CMS • GraphQL</p>
+                            <p class="app-desc">Flexible content management system with modern architecture for
+                                enterprise content delivery.</p>
+                            <button class="btn-expand" onclick="toggleDetails(this)">View Details</button>
+                        </div>
+                        <div class="app-details">
+                            <h4>About Modern CMS</h4>
+                            <p><strong>What it does:</strong> A next-generation headless CMS designed for content
+                                creators and developers. Decouples content from presentation, enabling teams to manage
+                                content once and deliver it anywhere—web, mobile, or third-party platforms.</p>
+                            <p><strong>Key Features:</strong></p>
+                            <ul>
+                                <li>Headless CMS architecture</li>
+                                <li>GraphQL and REST APIs</li>
+                                <li>Rich text editing with media library</li>
+                                <li>Version control and content versioning</li>
+                                <li>Workflow and approval system</li>
+                                <li>Multi-language support</li>
+                                <li>SEO optimization tools</li>
+                                <li>Webhook integration for automation</li>
+                            </ul>
+                            <p><strong>Tech Stack:</strong> Next.js, GraphQL, Node.js, MongoDB</p>
+                            <p><strong>Status:</strong> Enterprise licensing available</p>
+                            <a href="index.html#contact" class="btn-link">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="site-footer">
+                <small>© <span id="year"></span> MOHAMMAD RAYYAN — Built by Rayyan Group of Company</small>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+<li><strong>Order Processing:</strong> Reduces order errors by 95% through automated
+    verification and quality checks</li>
+<li><strong>Inventory Management:</strong> Real-time stock tracking prevents stockouts
+    and minimizes food waste by 40%</li>
+<li><strong>Staff Scheduling:</strong> AI-optimized schedules based on demand patterns
+    reduce labor costs by 15-20%</li>
+<li><strong>Customer Feedback:</strong> Automated sentiment analysis from reviews
+    improves service quality</li>
+<li><strong>Supplier Coordination:</strong> Smart ordering and payment reduces costs by
+    20-30%</li>
+<li><strong>Performance Analytics:</strong> Daily insights on sales, efficiency, and
+    customer trends</li>
+</ul>
+<p><strong>Business Results:</strong> Restaurants report 25-40% operational efficiency
+    improvement, 15% customer satisfaction increase, and 10-15% revenue growth.</p>
+<p><strong>Tech Stack:</strong> NLP, Computer Vision, Predictive Analytics, API Integrations
+</p>
+<a href="index.html#contact" class="btn-link">Deploy Now</a>
+</div>
+</div>
+
+<!-- School Management Agent -->
+<div class="agent-container">
+    <div class="agent-card">
+        <div class="agent-icon">🎓</div>
+        <h3>School Management Agent</h3>
+        <p class="agent-industry">For: Schools & Educational Institutions</p>
+        <p class="agent-desc">Automates attendance, grading, parent communication, and scheduling
+            for efficient school operations.</p>
+        <button class="btn-expand" onclick="toggleDetails(this)">View Details</button>
+    </div>
+    <div class="agent-details">
+        <h4>How School Management Agent Works</h4>
+        <p><strong>What it automates:</strong> Student attendance tracking, grade processing, parent
+            notifications, class scheduling, fee management, and exam coordination.</p>
+        <p><strong>Core Automation Features:</strong></p>
+        <ul>
+            <li><strong>Attendance Tracking:</strong> Biometric/QR integration with instant alerts
+                for absences</li>
+            <li><strong>Grade Processing:</strong> Automatic grade calculation and report card
+                generation in minutes</li>
+            <li><strong>Parent Communication:</strong> Scheduled notifications for academics,
+                events, and emergencies</li>
+            <li><strong>Class Scheduling:</strong> Intelligent algorithm minimizes conflicts and
+                optimizes resource usage</li>
+            <li><strong>Fee Management:</strong> Automated payment reminders and tracking with
+                late-fee calculations</li>
+            <li><strong>Exam Coordination:</strong> End-to-end exam management from scheduling to
+                result publication</li>
+        </ul>
+        <p><strong>Business Results:</strong> Schools save 15-20 hours/week on admin, improve parent
+            engagement by 40%, achieve 99% data accuracy.</p>
+        <p><strong>Tech Stack:</strong> Machine Learning, Database Automation, SMS/Email APIs,
+            Biometric Integration</p>
+        <a href="index.html#contact" class="btn-link">Deploy Now</a>
+    </div>
+</div>
+
+<!-- E-Commerce Agent -->
+<div class="agent-container">
+    <div class="agent-card">
+        <div class="agent-icon">🛒</div>
+        <h3>E-Commerce Growth Agent</h3>
+        <p class="agent-industry">For: Online Stores & Retail Companies</p>
+        <p class="agent-desc">Automates customer service, inventory, recommendations, and marketing
+            for explosive store growth.</p>
+        <button class="btn-expand" onclick="toggleDetails(this)">View Details</button>
+    </div>
+    <div class="agent-details">
+        <h4>How E-Commerce Growth Agent Works</h4>
+        <p><strong>What it automates:</strong> Customer inquiries, inventory synchronization,
+            personalized recommendations, dynamic pricing, email marketing, and order fulfillment.
+        </p>
+        <p><strong>Core Automation Features:</strong></p>
+        <ul>
+            <li><strong>AI Chatbot:</strong> Handles 80% of customer inquiries 24/7 with
+                multilingual support</li>
+            <li><strong>Inventory Sync:</strong> Real-time synchronization across all sales channels
+                prevents overselling</li>
+            <li><strong>Recommendations:</strong> ML-powered product suggestions increase AOV by
+                25-35%</li>
+            <li><strong>Dynamic Pricing:</strong> AI-optimized prices maximize profit margins based
+                on demand</li>
+            <li><strong>Email Marketing:</strong> Automated campaigns generate 30-40% repeat
+                purchase rate</li>
+            <li><strong>Predictive Analytics:</strong> Identify high-value segments and churn risks
+                automatically</li>
+        </ul>
+        <p><strong>Business Results:</strong> 40-50% conversion increase, 35% revenue boost, 60%
+            customer service cost reduction.</p>
+        <p><strong>Tech Stack:</strong> Conversational AI, Recommendation Engines, Dynamic Pricing
+            ML, Email Automation</p>
+        <a href="index.html#contact" class="btn-link">Deploy Now</a>
+    </div>
+</div>
+
+<!-- Corporate Services Agent -->
+<div class="agent-container">
+    <div class="agent-card">
+        <div class="agent-icon">🏢</div>
+        <h3>Corporate Operations Agent</h3>
+        <p class="agent-industry">For: Large Companies & Enterprises</p>
+        <p class="agent-desc">Automates HR, finance, project management, and compliance for
+            enterprise-scale operations.</p>
+        <button class="btn-expand" onclick="toggleDetails(this)">View Details</button>
+    </div>
+    <div class="agent-details">
+        <h4>How Corporate Operations Agent Works</h4>
+        <p><strong>What it automates:</strong> HR onboarding/offboarding, payroll processing,
+            expense management, project tracking, compliance audits, and executive reporting.</p>
+        <p><strong>Core Automation Features:</strong></p>
+        <ul>
+            <li><strong>HR Onboarding:</strong> Reduces onboarding time from weeks to days with
+                automated workflows</li>
+            <li><strong>Payroll Processing:</strong> Eliminates manual errors and delays with 100%
+                accuracy</li>
+            <li><strong>Expense Management:</strong> Smart approval workflows reduce processing time
+                by 70%</li>
+            <li><strong>Project Tracking:</strong> Real-time insights enable data-driven decision
+                making</li>
+            <li><strong>Compliance Audits:</strong> Automated checks reduce audit risk by 90%</li>
+            <li><strong>Executive Dashboards:</strong> Real-time KPI tracking and predictive
+                insights</li>
+        </ul>
+        <p><strong>Business Results:</strong> Save 100+ hours/month on admin work, reduce compliance
+            risk by 85%, improve decision speed by 3x.</p>
+        <p><strong>Tech Stack:</strong> RPA, Workflow Automation, AI Analytics, Compliance Engines
+        </p>
+        <a href="index.html#contact" class="btn-link">Deploy Now</a>
+    </div>
+</div>
+</div>
+</section>
+
+<footer class="site-footer">
+    <small>© <span id="year"></span> MOHAMMAD RAYYAN — Built by Rayyan Group of Company</small>
+</footer>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>

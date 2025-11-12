@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mobile Apps — MOHAMMAD RAYYAN</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <div class="page">
+        <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+        <nav class="site-nav-main">
+            <div class="nav-brand">
+                <h1><a href="index.html">MOHAMMAD RAYYAN</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mobile-apps.html" class="active">Mobile Apps</a></li>
+                <li><a href="web-apps.html">Web Apps</a></li>
+                <li><a href="saas.html">SaaS</a></li>
+                <li><a href="ai-agents.html">AI Agents</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="container" role="main">
+            <section class="card" id="mobile-apps-section" aria-labelledby="mobile-title">
+                <h2 id="mobile-title">📱 Our Mobile Apps</h2>
+                <p class="intro-text">Explore our collection of high-quality mobile applications built with modern
+                    technologies and user-centric design.</p>
+
+                <div class="apps-grid">
+                    <!-- Delivora Food Delivery -->
+                    <div class="app-container">
+                        <div class="app-card">
+                            <div class="app-icon">🍕</div>
+                            <h3>Delivora</h3>
+                            <p class="app-tech">Dart • Firebase</p>
+                            <p class="app-desc">Food delivery platform with real-time order tracking and seamless
+                                payment integration.</p>
+                            <button class="btn-expand" onclick="toggleDetails(this)">View Details</button>
+                        </div>
+                        <div class="app-details">
+                            <h4>About Delivora</h4>
+                            <p><strong>What it does:</strong> A full-featured food delivery application that connects
+                                customers with restaurants. Users can browse menus, place orders, track deliveries in
+                                real-time, and securely pay through multiple payment options.</p>
+                            <p><strong>Key Features:</strong></p>
+                            <ul>
+                                <li>Real-time order tracking with map integration</li>
+                                <li>Firebase authentication for secure login/signup</li>
+                                <li>Push notifications for order updates</li>
+                                <li>Multiple payment methods support</li>
+                                <li>Rating and review system for restaurants and delivery partners</li>
+                                <li>Favorites and order history management</li>
+                            </ul>
+                            <p><strong>Tech Stack:</strong> Dart, Flutter, Firebase (Auth, Firestore, Cloud Functions)
+                            </p>
+                            <a href="https://github.com/mohammadrayyan94/Delivora-Food-delivery-app" target="_blank"
+                                class="btn-link">View on GitHub</a>
+                        </div>
+                    </div>
+
+                    <!-- E-commerce App -->
+                    <div class="app-container">
+                        <div class="app-card">
+                            <div class="app-icon">🛍️</div>
+                            <h3>E-Commerce App</h3>
+                            <p class="app-tech">Dart • Firebase</p>
+                            <p class="app-desc">Complete shopping platform with product catalog, cart, and checkout
+                                functionality.</p>
+                            <button class="btn-expand" onclick="toggleDetails(this)">View Details</button>
+                        </div>
+                        <div class="app-details">
+                            <h4>About E-Commerce App</h4>
+                            <p><strong>What it does:</strong> A comprehensive mobile shopping application enabling users
+                                to browse products, manage shopping carts, apply discounts, and complete secure
+                                transactions. Features robust product search and filtering.</p>
+                            <p><strong>Key Features:</strong></p>
+                            <ul>
+                                <li>Product catalog with advanced filtering and search</li>
+                                <li>Shopping cart and wishlist management</li>
+                                <li>Secure checkout with multiple payment options</li>
+                                <li>Order history and tracking</li>
+                                <li>User reviews and product ratings</li>
+                                <li>Personalized recommendations</li>
+                                <li>Push notifications for deals and updates</li>
+                            </ul>
+                            <p><strong>Tech Stack:</strong> Dart, Flutter, Firebase</p>
+                            <a href="https://github.com/mohammadrayyan94/E_commerce" target="_blank"
+                                class="btn-link">View on GitHub</a>
+                        </div>
+                    </div>
+
+                    <!-- Foodigy App -->
+                    <div class="app-container">
+                        <div class="app-card">
+                            <div class="app-icon">🍔</div>
+                            <h3>Foodigy</h3>
+                            <p class="app-tech">Dart • Firebase</p>
+                            <p class="app-desc">Food delivery with Firebase authentication and real-time database
+                                integration for seamless ordering.</p>
+                            <button class="btn-expand" onclick="toggleDetails(this)">View Details</button>
+                        </div>
+                        <div class="app-details">
+                            <h4>About Foodigy</h4>
+                            <p><strong>What it does:</strong> A modern food delivery application fully integrated with
+                                Firebase. Provides secure user authentication, real-time database updates for menu
+                                changes and order status, and reliable cloud storage for images and user data.</p>
+                            <p><strong>Key Features:</strong></p>
+                            <ul>
+                                <li>Firebase Authentication (Email, Phone, Google, Apple Sign-In)</li>
+                                <li>Real-time Firestore database for live menu updates</li>
+                                <li>Cloud Storage for restaurant and food images</li>
+                                <li>Order status synchronization across devices</li>
+                                <li>In-app messaging for order notifications</li>
+                                <li>Delivery partner tracking and communication</li>
+                                <li>Wallet and credit management</li>
+                            </ul>
+                            <p><strong>Tech Stack:</strong> Dart, Flutter, Firebase (Auth, Firestore, Storage, Cloud
+                                Messaging)</p>
+                            <a href="https://github.com/mohammadrayyan94/Foodigy-" target="_blank" class="btn-link">View
+                                on GitHub</a>
+                        </div>
+                    </div>
+
+                    <!-- Global Chat App -->
+                    <div class="app-container">
+                        <div class="app-card">
+                            <div class="app-icon">💬</div>
+                            <h3>Global Chat App</h3>
+                            <p class="app-tech">Dart • Firebase</p>
+                            <p class="app-desc">Real-time messaging platform with secure Firebase authentication for
+                                global communication.</p>
+                            <button class="btn-expand" onclick="toggleDetails(this)">View Details</button>
+                        </div>
+                        <div class="app-details">
+                            <h4>About Global Chat App</h4>
+                            <p><strong>What it does:</strong> A worldwide instant messaging platform that enables users
+                                to communicate with people globally. Built entirely on Firebase, it provides smooth and
+                                secure authentication, real-time message delivery, user presence tracking, and reliable
+                                user management.</p>
+                            <p><strong>Key Features:</strong></p>
+                            <ul>
+                                <li>Seamless Firebase Authentication (Email, Phone, Social login)</li>
+                                <li>Real-time messaging with Firestore</li>
+                                <li>User presence and online status</li>
+                                <li>Typing indicators and read receipts</li>
+                                <li>Group chat support</li>
+                                <li>Media sharing (images, documents)</li>
+                                <li>User profiles with bio and avatar</li>
+                                <li>Block/Unblock functionality</li>
+                            </ul>
+                            <p><strong>Tech Stack:</strong> Dart, Flutter, Firebase (Auth, Firestore, Cloud Messaging)
+                            </p>
+                            <a href="https://github.com/mohammadrayyan94/Global-Chat-App" target="_blank"
+                                class="btn-link">View on GitHub</a>
+                        </div>
+                    </div>
+
+                    <!-- Weather App -->
+                    <div class="app-container">
+                        <div class="app-card">
+                            <div class="app-icon">⛅</div>
+                            <h3>Weather App</h3>
+                            <p class="app-tech">C++</p>
+                            <p class="app-desc">Real-time weather application with accurate forecasting and
+                                location-based services.</p>
+                            <button class="btn-expand" onclick="toggleDetails(this)">View Details</button>
+                        </div>
+                        <div class="app-details">
+                            <h4>About Weather App</h4>
+                            <p><strong>What it does:</strong> A weather forecasting application that provides real-time
+                                weather information, hourly and daily forecasts, weather alerts, and climate analysis.
+                                Integrates with location services for precise location-based weather data.</p>
+                            <p><strong>Key Features:</strong></p>
+                            <ul>
+                                <li>Real-time weather data for any location worldwide</li>
+                                <li>Hourly and 7-day weather forecasts</li>
+                                <li>Weather alerts and severe weather warnings</li>
+                                <li>Wind speed, humidity, and pressure information</li>
+                                <li>UV index and air quality tracking</li>
+                                <li>Multiple location support with quick access</li>
+                                <li>Interactive weather maps</li>
+                            </ul>
+                            <p><strong>Tech Stack:</strong> C++, OpenWeather API</p>
+                            <a href="https://github.com/mohammadrayyan94/Weather_App" target="_blank"
+                                class="btn-link">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="site-footer">
+                <small>© <span id="year"></span> MOHAMMAD RAYYAN — Built by Rayyan Group of Company</small>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
